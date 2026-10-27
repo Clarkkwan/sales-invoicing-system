@@ -1,0 +1,53 @@
+# Local settings (may contain passwords)
+.env
+.env.*
+!.env.example
+credentials.*
+secrets.*
+*.pem
+*.key
+
+# Outer repository: allow only the root salesinvoice.sql export
+*.sql
+!/salesinvoice.sql
+*.sql.*
+*.dump
+*.dump.*
+
+# Backups and local exports
+backup/
+backups/
+*.gz
+*.bz2
+*.xz
+*.tar
+*.tgz
+*.csv
+*.xls
+*.xlsx
+*.bak
+*.backup
+*.old
+*.orig
+*.zip
+*.rar
+*.7z
+
+# Logs
+*.log
+logs/
+
+# Dependencies
+vendor/
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and tool settings
+.vscode/
+.idea/
+*.swp
+*~
